@@ -975,6 +975,9 @@ footer p:first-child {
 
 
 @media screen and (max-width: 900px) {
+    .sectionthree{
+        overflow-x: hidden;
+    }
     .header__left {
         display: none;
 
@@ -1042,6 +1045,9 @@ footer p:first-child {
 
 /* thapa resposnive techqniques */
 @media screen and (max-width: 1300px) {
+    .sectionthree{
+        overflow-x: hidden;
+    }
 
     .container {
         max-width: 100rem;
@@ -1062,6 +1068,9 @@ footer p:first-child {
 
 
 @media screen and (max-width: 1100px) {
+    .sectionthree{
+        overflow-x: hidden;
+    }
 
     html {
         font-size: 50.5%;
@@ -1082,15 +1091,22 @@ footer p:first-child {
 }
 
 @media screen and (max-width: 900px) {
+    .sectionthree{
+        overflow-x: hidden;
+    }
     .sectionone .grid-two-column {
         grid-template-columns: 1fr;
         text-align: center;
 
     }
-
+    .section{
+        padding: 9rem 10rem;
+    }
+    
     .sectionone .left {
         grid-column: 1/-1;
     }
+
 
     .sectionone .inner_text {
         display: flex;
@@ -1124,10 +1140,10 @@ footer p:first-child {
         justify-self: left;
     }
 
-    .sectiontwo .container {
-        /* width: 700px; */
-        margin: 0 auto;
-    }
+    
+    
+    
+    
 
     .sectionthree .box .grid {
         /* grid-template-columns: 1fr; */
@@ -1138,6 +1154,7 @@ footer p:first-child {
 
     .footer .container {
         width: 700px;
+
     }
 
     .sectionsix .container {
@@ -1164,16 +1181,22 @@ footer p:first-child {
     .footer .grid-four-column {
         grid-template-columns: 1fr 1fr;
     }
+    
+    
 
 }
 
 
 
 @media screen and (max-width: 760px) {
+    .sectionthree{
+        overflow-x: hidden;
+    }
     html {
         font-size: 42.5%;
         /* (it means 1rem=10px) */
     }
+
 
     .section .container{
         width: 550px;
@@ -1187,9 +1210,15 @@ footer p:first-child {
     .sectionthree .container .grid {
         gap: 3rem;
     }
+    .section{
+        padding: 9rem 5rem;
+    }
 
 }
 @media screen and (max-width: 600px) {
+    .sectionthree{
+        overflow-x: hidden;
+    }
     .sectiontwo .left .inner_img {
         width: 130%;
     }
@@ -1219,8 +1248,23 @@ footer p:first-child {
 
 }
 @media screen and (max-width: 500px) {
+    .sectionthree{
+        overflow-x: hidden;
+    }
     .section .container{
         width: 300px;
+        /* grid-template-columns: 1fr; */
+    }
+    .sectionone .inner_img {
+        width: 244%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section .container {
+        width: 300px;
+        grid-template-columns: 1fr ;
+        gap: 4rem;
     }
     .sectionfive .container .grid {
         gap: 1rem;
@@ -1254,15 +1298,46 @@ footer p:first-child {
     }
     .section .container {
         width: 300px;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr ;
         gap: 4rem;
+    }
+    .sectionone .inner_img {
+        width: 110%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sectionfour .grid{
+        grid-template-columns:1fr 1fr ;
+    }
+    .footer .grid{
+        grid-template-columns: 1fr 1fr;
     }
 
 
+.sectionthree .btn {
+        background: var(--gradientsupport);
+        padding: 1.4rem 2.2rem;
+        width: 12rem;
+        border: none;
+        color: var(--helper-tint);
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all linear 0.3s;
+        -webkit-transition: all linear 0.3s;
+        -o-transition: all linear 0.3s;
+        -moz-transition: all linear 0.3s;
+        white-space: nowrap;
+    }.sectionthree p{
+        padding: 0 10rem 0 0;
+    }
 
-
-
-
+body{
+    overflow-x: hidden;
+}
 
 
 
