@@ -105,6 +105,19 @@ li {
     align-items: center;
     background-color: var(--bg);
 }
+/* =======================sticky navbar styling start===================== */
+.sticky .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--white);
+    z-index: 99999;
+    box-shadow: var(--para-tint);
+}
+/* =======================sticky navbar styling end===================== */
+
+
 
 .header__logo {
     width: 20%;

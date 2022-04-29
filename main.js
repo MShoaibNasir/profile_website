@@ -1,3 +1,18 @@
+  // ===========stiky navbar===================
+  const herosection=document.querySelector('.sectionone');
+  const observer= new IntersectionObserver((entries)=>{
+    const ent=entries[0];
+!ent.isIntersecting ? document.body.classList.add("sticky"):document.body.classList.remove("sticky");
+    console.log(ent);
+    
+  },{root:null,threshold:0});
+  observer.observe(herosection);
+
+
+
+
+
+
 const buttons=document.querySelector('.inner_btn');
 const button=document.querySelectorAll('.p-btn');
 const image=document.querySelectorAll('.sectionthree_inner_img');
@@ -21,7 +36,8 @@ var swiper = new Swiper(".mySwiper", {
   });
   // ==============================scrool to top button=================
   const scrooltotop=document.createElement("div");
-  const header=document.querySelector('.header');
+  
+  const header=document.querySelector('.sectionone');
   const footer_element=document.querySelector('.footer');
   scrooltotop.classList.add("scroolTotop-style");
   scrooltotop.innerHTML='<i class="fa-solid fa-arrow-up scrool-top"></i>';
@@ -38,3 +54,9 @@ header.scrollIntoView({behavior:"smooth"})
       $('.navbar').toggleClass('.navbar')
     })
   })
+
+
+
+
+
+
