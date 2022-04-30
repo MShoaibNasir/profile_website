@@ -1,15 +1,22 @@
   // ===========stiky navbar===================
-  const herosection=document.querySelector('.sectionone');
-  const observer= new IntersectionObserver((entries)=>{
-    const ent=entries[0];
-!ent.isIntersecting ? document.body.classList.add("sticky"):document.body.classList.remove("sticky");
-    console.log(ent);
+//   const herosection=document.querySelector('.sectionone');
+//   const observer= new IntersectionObserver((entries)=>{
+//     const ent=entries[0];
+// !ent.isIntersecting ? document.body.classList.add("sticky"):document.body.classList.remove("sticky");
+//     console.log(ent);
     
-  },{root:null,threshold:0});
-  observer.observe(herosection);
+//   },{root:null,threshold:0});
+//   observer.observe(herosection);
 
-
-
+  var bannerHeight;
+  $(window).scroll(function () {
+    bannerHeight = $(".sectionone").height();
+    if ($(window).scrollTop() >= bannerHeight + 50) {
+        $('body').addClass('sticky')
+    } else {
+      $('body').removeClass('sticky')
+    }
+  });
 
 
 
@@ -35,23 +42,13 @@ var swiper = new Swiper(".mySwiper", {
     },
   });
   // ==============================scrool to top button=================
-  const scrooltotop=document.createElement("div");
-  
-  const header=document.querySelector('.sectionone');
-  const footer_element=document.querySelector('.footer');
-  scrooltotop.classList.add("scroolTotop-style");
-  scrooltotop.innerHTML='<i class="fa-solid fa-arrow-up scrool-top"></i>';
 
-  footer_element.after(scrooltotop);  
 
-const scroolup=()=>{
-header.scrollIntoView({behavior:"smooth"})
-}
   scrooltotop.addEventListener("click",scroolup);
   // ===================navbar responsive menu=================
   $(document).ready(function(){
-    $(".fa-bars").click(function(){
-      $('.navbar').toggleClass('.navbar')
+    $(".menu-btn").click(function(){
+      $('.navbar').toggleClass('active')
     })
   })
 
