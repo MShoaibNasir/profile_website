@@ -8,13 +8,10 @@
     <title>Thapa thecnical website</title>
     <link rel="stylesheet" href="./css/style.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/all.css" />
+    <script src="all.js"></script>
     <!-- ######## swiiper cdn ################### -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-
-
 </head>
 
 <body class="sticky">
@@ -26,29 +23,28 @@
             </div>
         </div>
         <div class="header__right">
-
             <nav class="navbar">
 
                 <ul class="navbar_lists">
-                    <li><a href="#" class="navbar-link home-link">Home</a></li>
-                    <li><a href="#" class="navbar-link about-link">about</a></li>
-                    <li><a href="#" class="navbar-link services-link">services</a></li>
-
-                    <li><a href="#" class="navbar-link portfolio-link">portfolio</a></li>
-                    <li><a href="#" class="navbar-link contact-link">contact</a></li>
+                    <li><a href="#sectionone" class="navbar-link home-link">Home</a></li>
+                    <li><a href="#sectiontwo" class="navbar-link about-link">about</a></li>
+                    <li><a href="#sectionthree" class="navbar-link services-link">services</a></li>
+                    <li><a href="#sectionfour" class="navbar-link portfolio-link">portfolio</a></li>
+                    <li><a href="#sectionfive" class="navbar-link contact-link">contact</a></li>
                 </ul>
             </nav>
-            <i class="fa-solid fa-bars"></i>
-
-
-
         </div>
-
+         <div class="menu-btn">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+           </div>
 
     </header>
     <!-- sectionone start -->
     <main>
-        <section class="sectionone section">
+        <section id="sectionone" class="sectionone section">
 
             <div class=" container grid grid-two-column">
                 <div class="left">
@@ -71,7 +67,7 @@
     </main>
 
 
-    <section class="sectiontwo section">
+    <section id="sectiontwo" class="sectiontwo section">
 
         <div class=" container grid grid-two-column">
             <div class="left">
@@ -164,7 +160,7 @@
     <!-- =======================sectionthree start======================== -->
 
 
-    <section class="sectionthree section">
+    <section id="sectionthree" class="sectionthree section">
 
 
 
@@ -302,7 +298,7 @@
 
     </section>
     <!-- =======================sectionfour start======================== -->
-    <div class="section sectionfour">
+    <div id="sectionfour" class="section sectionfour">
         <div class="grid grid-four-column container">
             <div class="box">
                 <h2 class="count-number">2000+</h2>
@@ -324,7 +320,7 @@
         </div>
     </div>
     <!-- =======================sectionfive start======================== -->
-    <section class="sectionfive section">
+    <section id="sectionfive" class="sectionfive section">
         <div class="container">
             <div class="inner_text">
                 <h2 class="commom-heading">Service offers</h2>
@@ -632,6 +628,7 @@
     </section>
     <!-- =======================sectionseven start======================== -->
     <section class="sectionseven section">
+        <div class="layer"></div>
         <div class="overlay">
             <div class="inner_text container">
                 <h3>I am <span>available</span> for freelancing</h3>
@@ -721,7 +718,11 @@
 
         </div>
 
-
+       <a href="#sectionone">
+        <div class="scroolTotop-style">
+            <i class="fa-solid fa-arrow-up scrool-top"></i>
+        </div>
+       </a>
 
         <div class="footer_bottom">
             <div class="inner_icon">
@@ -730,8 +731,6 @@
                 <i class="fa-brands fa-youtube"></i>
             </div>
             <p>copyright &copy; 2022 made by aptech student Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-
         </div>
 
     </footer>
