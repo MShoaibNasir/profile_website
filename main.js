@@ -44,7 +44,7 @@ var swiper = new Swiper(".mySwiper", {
   // ==============================scrool to top button=================
 
 
-  scrooltotop.addEventListener("click",scroolup);
+
   // ===================navbar responsive menu=================
   $(document).ready(function(){
     $(".menu-btn").click(function(){
